@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <title>Add product</title>
+</head>
+
+<body style="background-color:#DDD;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--  SIDEBAR VVV-->
+            <div class="col-md-2 fixed-top" style="height:100%; background-color: #FFF; border-right-width: 12px; border-color: #CBAF87; border-left-color:#FFF ;  border-left-style: solid; border-right-style: solid;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)">
+                <div style="margin-top: 30%;">
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4">
+                            Add product
+                    </button> </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4">
+                            Remove product
+                    </button> </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4">
+                            Update product
+                    </button> </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4">
+                            Users alert
+                    </button> </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4">
+                            Print QRcode
+                    </button> </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button class="sidebarbtn mb-4 mt-5">
+                        Logout
+                </button> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+            <!-- SIDEBAR END -->
+            <div class="col-sm-10">
+                <div class="container-fluid text-center">
+                    <div class="row justify-content-center align-content-center" style="margin-top:7%;">
+                        <div class="labeld justify-content-center align-content-center text-center">Product data</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                        </div>
+                        <!--first part of the form-->
+                        <div class="col-4 text-center justify-content-center align-items-center">
+                            <input class="inputd m-4 mt-5" type="text" name="" placeholder="Product name" required>
+
+                            <input class="inputd m-4" type="text" name="" placeholder="Product serial number" required>
+
+                            <select class="inputd m-4" id="prodtype" aria-placeholder="Product type" name="prodtype">
+                        <option value="dairy" >Dairy</option>
+                        <option value="meat">Meat and deli</option>
+                        <option value="fruit">Fruits and vegetables</option>
+                        <option value="canned">Canned</option>
+                        <option value="canned">Cosmetics</option>
+                        <option value="canned">Bakery</option>
+                        </select>
+                            <select class="inputd m-4" id="" name="section">
+                                <option value="A" >Aisle A</option>
+                                <option value="B" >Aisle B</option>
+                                <option value="C" >Aisle C</option>
+                                <option value="D" >Aisle D</option>
+                                <option value="E" >Aisle E</option>
+                        </select>
+                            <input class=" inputd m-4" type="text" name="" placeholder="Offer" id="" required>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                        <!-- second part of the form-->
+                        <div class="col-4 text-center justify-content-center align-items-center">
+                            <input class="inputd m-4 mt-5" type="file" name="prodimg" required>
+                            <input class="inputd m-4" type="text" placeholder="Product weight" name="prodweight" required>
+                            <input class="inputd m-4" type="date" name="proddate" required>
+                            <input class="inputd m-4" type="number" placeholder="Porduct price" name="prodprice" required>
+                            <input class="inputd m-4" type="file" name="offerimg" required>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                </div>
+                <div class=" row mt-4 align-content-center justify-content-center">
+                    <input class="adminbtn " type="button" value="Add Product" placeholder="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
