@@ -1,0 +1,117 @@
+/*
+below is the template for admin control pages
+*/
+
+.sidebarbtn {
+    position: relative;
+    background-color: #30475E;
+    border-radius: 12px;
+    height: 60px;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.sidebarbtn:hover {
+    background-color: #7E8A87;
+    transition-duration: 0.3s;
+}
+
+.adminbtn {
+    background-color: #30475E;
+    border-radius: 12px;
+    height: 50px;
+    width: 280px;
+    text-align: center;
+    color: #FFF;
+    font-size: larger;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.inputd {
+    background-color: #FFF;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    height: 30px;
+    width: 220px;
+    padding: 2px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.labeld {
+    background-color: #FFF;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    border-radius: 12px;
+    width: 280px;
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/* Below is for the index page (list of items page) */
+
+.dyabtn {
+    background-color: #30475E;
+    border-radius: 24px;
+    height: 50px;
+    width: 180px;
+}
+
+.dyasearchbtn {
+    background-color: #30475E;
+    border-radius: 24px;
+    height: 100%;
+    width: 90px;
+}
+
+.dyabtn:hover {
+    background-color: #57b15d;
+    transition-duration: 0.3s;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-revcol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.scrollbox {
+    overflow: auto;
+    max-height: 400px;
+    width: 100%;
+    /*--g: radial-gradient(55% 20px, #0009, #0000);
+    background: linear-gradient(#30475E 10px, #0000 40px calc(100% - 40px), #30475E calc(100% - 10px)) local, var(--g) top /100% 200%, var(--g) bottom/100% 200%;*/
+}
+
+ :root {
+    --no-of-slides: 6;
+    --slides-in-view: 4;
+    --slide-width: 100%;
+    --slide-height: 300px;
+    --iteration-time: 10s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+    }
+}
